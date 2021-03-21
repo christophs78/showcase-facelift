@@ -28,12 +28,16 @@
 
     <ui:define name="implementation">
         <div class="p-grid">
-            <div class="card p-col-12 p-lg-6 p-xl-4">
-                <p:radarChart model="#{chartJsView.radarModel}"/>
+            <div class="p-col-12 p-lg-6 p-xl-4">
+                <div class="card">
+                    <p:radarChart model="#{chartJsView.radarModel}"/>
+                </div>
             </div>
 
-            <div class="card p-col-12 p-lg-6 p-xl-4">
-                <p:radarChart model="#{chartJsView.radarModel2}"/>
+            <div class="p-col-12 p-lg-6 p-xl-4">
+                <div class="card">
+                    <p:radarChart model="#{chartJsView.radarModel2}"/>
+                </div>
             </div>
         </div>
     </ui:define>
