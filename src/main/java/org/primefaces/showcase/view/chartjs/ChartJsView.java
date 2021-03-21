@@ -246,12 +246,19 @@ public class ChartJsView implements Serializable {
         data.addChartDataSet(dataSet);
         
         //Options
-        LineChartOptions options = new LineChartOptions();        
+        LineChartOptions options = new LineChartOptions();
         Title title = new Title();
         title.setDisplay(true);
         title.setText("Scatter Chart");
         options.setShowLines(false);
         options.setTitle(title);
+
+        CartesianScales cScales = new CartesianScales();
+        CartesianLinearAxes linearAxes = new CartesianLinearAxes();
+        linearAxes.setType("linear");
+        linearAxes.setPosition("bottom");
+        cScales.addXAxesData(linearAxes);
+        options.setScales(cScales);
         
         scatterModel.setOptions(options);
         scatterModel.setData(data);
