@@ -279,6 +279,7 @@ public class ChartJsView implements Serializable {
         dataSet.setData(values);
         dataSet.setLabel("Left Dataset");
         dataSet.setYaxisID("left-y-axis");
+        dataSet.setFill(true);
         
         LineChartDataSet dataSet2 = new LineChartDataSet();
         List<Object> values2 = new ArrayList<>();
@@ -291,6 +292,7 @@ public class ChartJsView implements Serializable {
         dataSet2.setData(values2);
         dataSet2.setLabel("Right Dataset");
         dataSet2.setYaxisID("right-y-axis");
+        dataSet2.setFill(true);
         
         data.addChartDataSet(dataSet);
         data.addChartDataSet(dataSet2);
